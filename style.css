@@ -1,0 +1,235 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0f0f13;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #1a2d5a;
+  color: #e5e5e5;
+  height: 300px;
+  background-image: url('./images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  float: left;
+}
+
+#title {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav {
+  float: right;
+  height: 79px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 30px;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #ffa600;
+}
+
+main {
+  background-color: #292929;
+  color: #e5e5e5;
+  padding: 50px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #000000;
+}
+
+.box {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 2px 2px 5px #000000;
+}
+
+.textbox {
+  background-color: #1a1a1a;
+  color: #e5e5e5;
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+}
+
+.box img {
+  max-width: 100%;
+}
+
+.box h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffa600;
+  text-shadow: 1px 1px #000000;
+}
+
+.box h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ff7300;
+  text-shadow: 1px 1px #000000;
+}
+
+.box p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.box a.button {
+  background-color: #ffa600;
+  color: #0f0f13;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 1px 1px #000000;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #36435f;
+  height: 80px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-left {
+  margin-right: auto;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 10px;
+  float: left;
+}
+
+.social-media-links {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+}
+
+.social-media-links li {
+  margin-left: 10px;
+}
+
+.social-media-links i {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+a.discord-profile-link {
+  color: #ae9999; /* Set the desired color for the link */
+}
+
+a.discord-profile-link:hover {
+  color: #ffffff; /* Set a different color for the link on hover if desired */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #36435f;
+}
+
+.timeline-event {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-event-date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #36435f;
+  color: #fff;
+  padding: 4px 8px;
+  font-weight: bold;
+}
+
+.timeline-event-content {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: #634848;
+  border: 1px solid #ccc;
+}
+
+.timeline-event-content h3 {
+  margin-top: 0;
+}
+
+.timeline-event-content p {
+  margin-bottom: 0;
+}
