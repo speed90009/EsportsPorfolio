@@ -7,7 +7,7 @@ const castingGigs = [
     description: "I was invited back to Stadium for their Split 2 tournament. I was casting the Top EU Teams with great Co-casters.",
     casters: "Casted With: Outqasted & Mqrine",
     vodUrl: "https://projectstadium.com/events/sss2mini1",
-    buttonLabel: "View Vods"
+    buttonLabel: "View Bracket"
   },
   {
     image: "./images/Stadium.png",
@@ -16,7 +16,7 @@ const castingGigs = [
     description: "Taking more of a Hosting role, I was casting the Top EU Teams and doing some analysis with other EU Casters.",
     casters: "Casted With: Outqasted & Mqrine",
     vodUrl: "https://projectstadium.com/events/sss2mini2",
-    buttonLabel: "View Vods"
+    buttonLabel: "View Bracket"
   },
   {
     image: "./images/Stadium.png",
@@ -25,7 +25,7 @@ const castingGigs = [
     description: "The final Mega Cup for Split 2, this was a huge event and a great enjoyment to cast. The Final match was dropped but the stream was smooth.",
     casters: "Casted With: Mqrine & Lethal_HT",
     vodUrl: "https://projectstadium.com/events/sss2mega2",
-    buttonLabel: "View Vods"
+    buttonLabel: "View Bracket"
   },
   {
     image: "./images/Stadium.png",
@@ -34,7 +34,16 @@ const castingGigs = [
     description: "This was Glory's first cast it was great to work with him in this Open Qualifier",
     casters: "Casted With: Outqasted & GloryGGz",
     vodUrl: "https://projectstadium.com/events/sss2foq",
-    buttonLabel: "View Vods"
+    buttonLabel: "View Bracket"
+  },
+  {
+    image: "./images/Stadium.png",
+    date: "9th July 2023",
+    game: "Project Stadium Split 2 Finals (Paid)",
+    description: "This was a great finals for the Stadium Split 2. I got to cast the Grand Finals match with Lethal, I was working remote but it all went so smoothly",
+    casters: "Casted With: Outqasted & Lethal_HT",
+    vodUrl: "https://www.youtube.com/watch?v=JTPWDjRVqwo&list=UULFTM7YoU7hNYlq1_zPjibkQg&ab_channel=NAVIHaloInfinite",
+    buttonLabel: "View Vod"
   }
 ];
 
