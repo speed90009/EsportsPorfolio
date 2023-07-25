@@ -43,11 +43,14 @@ const castingGigBoxes = castingGigs.map((castingGig) => {
   return `
     <div class="box">
       <img src=${castingGig.image} alt="Casting gig image">
-      <h3>${castingGig.date}</h3>
-      <h4>${castingGig.game}</h4>
-      <p>${castingGig.description}</p>
-      <p>${castingGig.casters}</p>
-      <a href="${castingGig.vodUrl}" class="button">View Brackets</a>
+      <div class="box-info">
+        <p>${castingGig.category}</p>
+        <h4>${castingGig.game}</h4>
+        <h3>${castingGig.date}</h3>
+        <p>${castingGig.description}</p>
+        <p>${castingGig.casters}</p>
+        <a href="${castingGig.vodUrl}" class="button">View Brackets</a>
+      </div>
     </div>
   `;
 });
