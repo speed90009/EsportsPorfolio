@@ -2,6 +2,10 @@
   font-family: "Abel";
   src: URL("Abel-Regular.ttf") format("truetype");
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Abel", sans-serif;
   margin: 0;
@@ -14,7 +18,12 @@ p {
   font-size: 18px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 540px) {
+  .hero h1 {
+    font-size: 46px;
+  }
+}
+@media (min-width: 541px) and (max-width: 740px) {
   .hero h1 {
     font-size: 53px;
   }
@@ -62,6 +71,7 @@ nav ul {
   list-style: none;
   margin: 0;
   display: inline;
+  text-align: right;
 }
 
 nav li {
@@ -107,13 +117,13 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 300px 30px 30px 30px;
+  padding: 400px 30px 30px 30px;
   margin-top: -100px;
 }
 
 .hero-text-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1150px;
+  margin: -190px auto 0 auto;
   height: 200px;
 }
 .hero-text-container h1, .hero-text-container h2 {
@@ -166,11 +176,7 @@ main {
   margin: 0 -20px 0 -20px;
   display: grid;
   grid-gap: 20px;
-}
-@media (max-width: 600px) {
-  #casting-gigs {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
 }
 @media (min-width: 601px) and (max-width: 1099px) {
   #casting-gigs {
@@ -232,14 +238,17 @@ footer {
   color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
 }
 
 .footer-contents {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1220px;
-  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: auto;
+  width: 100%;
 }
 
 .footer-left {
@@ -248,13 +257,11 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 10px;
   float: left;
 }
 
 .social-media-links {
   list-style: none;
-  margin: 10px;
   padding: 0;
   display: flex;
 }
