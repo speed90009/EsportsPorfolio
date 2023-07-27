@@ -2,6 +2,10 @@
   font-family: "Abel";
   src: URL("Abel-Regular.ttf") format("truetype");
 }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Abel", sans-serif;
   margin: 0;
@@ -14,7 +18,12 @@ p {
   font-size: 18px;
 }
 
-@media (max-width: 740px) {
+@media (max-width: 540px) {
+  .hero h1 {
+    font-size: 46px;
+  }
+}
+@media (min-width: 541px) and (max-width: 740px) {
   .hero h1 {
     font-size: 53px;
   }
@@ -32,7 +41,7 @@ p {
 
 header {
   color: #e5e5e5;
-  height: 80px;
+  min-height: 80px;
   background-color: transparent;
   z-index: 100;
 }
@@ -62,6 +71,7 @@ nav ul {
   list-style: none;
   margin: 0;
   display: inline;
+  text-align: right;
 }
 
 nav li {
@@ -86,7 +96,7 @@ nav a:after {
   height: 4px;
   bottom: -2px;
   left: 0;
-  background-color: #4765B7;
+  background-color: #9425f9;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -107,13 +117,13 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 300px 30px 30px 30px;
-  margin-top: -100px;
+  padding: 450px 30px 30px 30px;
+  margin-top: -160px;
 }
 
 .hero-text-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1150px;
+  margin: -190px auto 0 auto;
   height: 200px;
 }
 .hero-text-container h1, .hero-text-container h2 {
@@ -166,11 +176,7 @@ main {
   margin: 0 -20px 0 -20px;
   display: grid;
   grid-gap: 20px;
-}
-@media (max-width: 600px) {
-  #casting-gigs {
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr;
 }
 @media (min-width: 601px) and (max-width: 1099px) {
   #casting-gigs {
@@ -232,14 +238,17 @@ footer {
   color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
 }
 
 .footer-contents {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1220px;
-  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: auto;
+  width: 100%;
 }
 
 .footer-left {
@@ -248,13 +257,11 @@ footer {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 10px;
   float: left;
 }
 
 .social-media-links {
   list-style: none;
-  margin: 10px;
   padding: 0;
   display: flex;
 }
@@ -335,8 +342,13 @@ img {
 .services {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat(5, [col] 1fr);
-  grid-template-rows: repeat(2, [row] auto);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 601px) {
+  .services {
+    grid-template-columns: repeat(5, [col] 1fr);
+    grid-template-rows: repeat(2, [row] auto);
+  }
 }
 
 .service {
@@ -345,24 +357,40 @@ img {
   border-radius: 5px;
 }
 .service:nth-child(1) {
-  grid-column: col 1/span 3;
-  grid-row: row 1;
   background: linear-gradient(178deg, #66407b 0%, #e90f5f 100%, #fba8d6 100.1%);
 }
+@media (min-width: 601px) {
+  .service:nth-child(1) {
+    grid-column: col 1/span 3;
+    grid-row: row 1;
+  }
+}
 .service:nth-child(2) {
-  grid-column: col 4/span 2;
-  grid-row: row 1;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
+@media (min-width: 601px) {
+  .service:nth-child(2) {
+    grid-column: col 4/span 2;
+    grid-row: row 1;
+  }
+}
 .service:nth-child(3) {
-  grid-column: col 1/span 2;
-  grid-row: row 2;
   background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
 }
+@media (min-width: 601px) {
+  .service:nth-child(3) {
+    grid-column: col 1/span 2;
+    grid-row: row 2;
+  }
+}
 .service:nth-child(4) {
-  grid-column: col 3/span 3;
-  grid-row: row 2;
   background: linear-gradient(178deg, #391f69 -2.3%, #732b9b 44.4%, #8d236d 103.4%);
+}
+@media (min-width: 601px) {
+  .service:nth-child(4) {
+    grid-column: col 3/span 3;
+    grid-row: row 2;
+  }
 }
 
 .service h3 {
@@ -372,8 +400,13 @@ img {
 
 .about {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 15px;
+}
+@media (min-width: 601px) {
+  .about {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 .about .about-container {
   padding: 20px;
