@@ -51,7 +51,7 @@ p {
 
 header {
   color: #e5e5e5;
-  height: 80px;
+  min-height: 80px;
   background-color: transparent;
   z-index: 100;
 }
@@ -106,7 +106,7 @@ nav a:after {
   height: 4px;
   bottom: -2px;
   left: 0;
-  background-color: #4765B7;
+  background-color: #9425f9;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -127,8 +127,8 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 400px 30px 30px 30px;
-  margin-top: -100px;
+  padding: 450px 30px 30px 30px;
+  margin-top: -160px;
 }
 
 .hero-text-container {
@@ -352,8 +352,12 @@ img {
 .services {
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat(5, [col] 1fr ) ;
-  grid-template-rows: repeat(2, [row] auto  );
+  grid-template-columns: 1fr;
+
+  @media (min-width: 601px) {
+    grid-template-columns: repeat(5, [col] 1fr ) ;
+    grid-template-rows: repeat(2, [row] auto  );
+  }
 }
 
 .service {
@@ -362,27 +366,40 @@ img {
   border-radius: 5px;
 
   &:nth-child(1) {
-    grid-column: col 1 / span 3;
-    grid-row: row 1;
     background: linear-gradient(178deg, rgb(102, 64, 123) 0%, rgb(233, 15, 95) 100%, rgb(251, 168, 214) 100.1%);
+
+    @media (min-width: 601px) {
+      grid-column: col 1 / span 3;
+      grid-row: row 1;
+    }
   }
 
   &:nth-child(2) {
-    grid-column: col 4 / span 2;
-    grid-row: row 1;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    @media (min-width: 601px) {
+      grid-column: col 4 / span 2;
+      grid-row: row 1;
+    }
   }
 
   &:nth-child(3) {
-    grid-column: col 1 / span 2;
-    grid-row: row 2;
     background: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+
+    @media (min-width: 601px) {
+      grid-column: col 1 / span 2;
+      grid-row: row 2;
+    }
   }
 
   &:nth-child(4) {
-    grid-column: col 3 / span 3;
-    grid-row: row 2;
-    background: linear-gradient(178deg, rgb(57, 31, 105) -2.3%, rgb(115, 43, 155) 44.4%, rgb(141, 35, 109) 103.4%);  }
+    background: linear-gradient(178deg, rgb(57, 31, 105) -2.3%, rgb(115, 43, 155) 44.4%, rgb(141, 35, 109) 103.4%);
+
+    @media (min-width: 601px) {
+      grid-column: col 3 / span 3;
+      grid-row: row 2;
+    }
+  }
 }
 
 .service h3 {
@@ -392,8 +409,12 @@ img {
 
 .about {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 15px;
+
+  @media (min-width: 601px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
   .about-container {
     padding: 20px;
