@@ -12,7 +12,7 @@ const castingGigs = [
     image: "./images/Stadium.jpg",
     date: "January 2023",
     game: "Project Stadium Pre (Paid)",
-    description: "The newest TO in European Halo did not disappoint. I was honored to be part of the broadcast team bringing the action to welcome stadium into the European Scene.",
+    description: "The newest TO in European Halo did not disappoint. I was honored to help welcome stadium into the European Scene.",
     vodUrl: "stadiumpreseason.html",
     buttonLabel: "View Tournaments"
   },
@@ -28,7 +28,7 @@ const castingGigs = [
     image: "./images/Stadium.jpg",
     date: "Feb - April 2023",
     game: "Project Stadium Split 1 (Paid)",
-    description: "The newest TO in European Halo did not disappoint. I was honored to be part of the broadcast team bringing the action to welcome stadium into the European Scene.",
+    description: "Following on from the Pre-Season Cup, I was honored to continue to be part of the broadcast team as stadium expanded in the European Scene.",
     vodUrl: "stadiumsplit1.html",
     buttonLabel: "View Tournaments"
   },
@@ -68,10 +68,18 @@ const castingGigs = [
     image: "./images/Stadium.jpg",
     date: "May - July 2023",
     game: "Project Stadium Split 2 (Paid)",
-    description: "Coming out of Split 1, Stadium mixed up for the format for Split 2 and I was honoured to be a part of it.",
+    description: "Coming out of Split 1, Stadium mixed up the format for Split 2 and I was thrilled to continue to be a part of it.",
     vodUrl: "stadiumsplit2.html",
     buttonLabel: "View Tournaments"
-  }
+  },
+  {
+    image: "./images/UHL.jpg",
+    date: "July 2023",
+    game: "UHL Summer Playoffs Finals",
+    description: "I had to solo cast the UHL Finals due to a clash with HCS & Europa events. The viewers enjoyed the laid-back approach.",
+    vodUrl: "https://youtu.be/FEgEGFp8eo0",
+    buttonLabel: "View Vods"
+  },
 ];
 
 // Create casting gig boxes
