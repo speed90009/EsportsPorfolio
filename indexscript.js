@@ -1,7 +1,7 @@
 // Define casting gigs
 const castingGigs = [
   {
-    image: "images/Europa.png",
+    image: "images/Europa.jpg",
     date: "December 2022",
     game: "Europa Halo Nations Cup",
     description: "This was my first official casting gig, UHL covered the B-Stream and I covered a portion of the tournament.",
@@ -9,7 +9,7 @@ const castingGigs = [
     buttonLabel: "View Vods"
   },
   {
-    image: "./images/Stadium.png",
+    image: "./images/Stadium.jpg",
     date: "January 2023",
     game: "Project Stadium Pre (Paid)",
     description: "The newest TO in European Halo did not disappoint. I was honored to be part of the broadcast team bringing the action to welcome stadium into the European Scene.",
@@ -17,7 +17,7 @@ const castingGigs = [
     buttonLabel: "View Tournaments"
   },
   {
-    image: "./images/UHL.png",
+    image: "./images/UHL.jpg",
     date: "Feb 2023",
     game: "UHL Draft Tournament Finals",
     description: "I supported the UK University Halo Scene by solo casting the Draft Tournament finals",
@@ -25,7 +25,7 @@ const castingGigs = [
     buttonLabel: "View Vods"
   },
   {
-    image: "./images/Stadium.png",
+    image: "./images/Stadium.jpg",
     date: "Feb - April 2023",
     game: "Project Stadium Split 1 (Paid)",
     description: "The newest TO in European Halo did not disappoint. I was honored to be part of the broadcast team bringing the action to welcome stadium into the European Scene.",
@@ -33,7 +33,7 @@ const castingGigs = [
     buttonLabel: "View Tournaments"
   },
   {
-    image: "./images/UHL.png",
+    image: "./images/UHL.jpg",
     date: "March 2023",
     game: "UHL Spring Playoffs Finals",
     description: "I used the opportunity of the UHL Finals to cast with new people and build up experiance as the lead on a broadcast",
@@ -65,7 +65,7 @@ const castingGigs = [
     buttonLabel: "View Vods"
   },
   {
-    image: "./images/Stadium.png",
+    image: "./images/Stadium.jpg",
     date: "May - July 2023",
     game: "Project Stadium Split 2 (Paid)",
     description: "Coming out of Split 1, Stadium mixed up for the format for Split 2 and I was honoured to be a part of it.",
@@ -79,12 +79,14 @@ const castingGigBoxes = castingGigs.map((castingGig) => {
   return `
     <div class="box">
       <img src=${castingGig.image} alt="Casting gig image">
-      <h3>${castingGig.date}</h3>
-      <h4>${castingGig.game}</h4>
-      <div class="textbox">
-        <p>${castingGig.description}</p>
-      </div>
+      <div class="box-info">
+        <h3>${castingGig.date}</h3>
+        <h4>${castingGig.game}</h4>
+        <div class="textbox">
+          <p>${castingGig.description}</p>
+        </div>
         <a href="${castingGig.vodUrl}" class="button">${castingGig.buttonLabel}</a>
+      </div>
     </div>
   `;
 });
