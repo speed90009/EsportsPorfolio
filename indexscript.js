@@ -80,6 +80,14 @@ const castingGigs = [
     vodUrl: "https://youtu.be/FEgEGFp8eo0",
     buttonLabel: "View Vods"
   },
+  {
+    image: "./images/EHL.jpg",
+    date: "Sept 2023",
+    game: "European Halo League Autumn",
+    description: "Our first tournament at EHL, we ran a short 3 week season. It was well received by the community!",
+    vodUrl: "ehlautumn23.html",
+    buttonLabel: "View Tournaments"
+  },
 ];
 
 // Create casting gig boxes
